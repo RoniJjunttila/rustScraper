@@ -1,0 +1,138 @@
+pub const RIKOS: &[(&str, &str)] = &[
+    ("Pohjoismaista jännitystä", "30-3221"),
+    ("Brittiläisiä rikossarjoja", "30-3786"),
+    ("True crime", "30-1084"),
+    ("Psykologista jännitystä", "30-3803"),
+    ("Suosittuja etsiväsarjoja", "30-3801"),
+];
+
+pub const NUORET: &[(&str, &str)] = &[
+    ("Rakkautta ja draamaa", "30-5368"),
+    ("Jännitystä ja mystiikkaa", "30-4356"),
+    ("Nuorten leffat", "30-4767"),
+    ("Summerin asiaa", "30-1842"),
+    ("Nuorten animaatiot", "30-5371"),
+];
+
+pub const DRAAMASARJAT: &[(&str, &str)] = &[
+    ("Historialliset draamasarjat", "30-1112"),
+    ("Kansainvälistä laatudraamaa", "30-5233"),
+    ("Kotimaiset draamasarjat", "30-1622"),
+    ("Draamakomediaa", "30-5220"),
+    ("Rikosdraamaa", "30-5219"),
+    ("Laatudraamaa", "30-4119"),
+    ("Parhaat sarjat", "30-4212"),
+    ("Rakkautta ja draamaa", "30-4357"),
+];
+
+pub const REALITY: &[(&str, &str)] = &[
+    ("Kotimainen reality", "30-3298"),
+    ("Ulkomaiset realitysarjat", "30-2951"),
+    ("Matkat ja seikkailut", "57-p8j4xvOxg"),
+    ("Ihmissuhteet", "30-3289"),
+    ("Toimintaa ja tekniikkaa", "30-3009"),
+    ("Kilpailurealityt", "30-3533"),
+    ("Reality: Työn touhussa", "30-3179"),
+    ("Luonto-reality", "30-3288"),
+    ("Eläimet", "30-3532"),
+    ("Terveys", "30-3784"),
+    ("Au pairien kaikki kaudet", "30-1376"),
+];
+
+pub const KOMEDIASARJAT: &[(&str, &str)] = &[
+    ("Ulkomaiset komediasarjat", "30-1191"),
+    ("Kotimaiset komediaklassikot", "30-2432"),
+    ("Synkkää ja vinoutunutta", "30-4345"),
+    ("Nopeat naurut", "30-3792"),
+    ("Sketsejä ja satiiria", "30-4311"),
+    ("Nuorten komediasarjat  ", "30-1841"),
+    ("Viihde- ja realitysarjoja", "30-2435"),
+    ("Komediasarjat", "30-46"),
+    ("Kotimaiset komediasarjat", "30-1137"),
+    ("30 vuotta Kummelia", "30-3074"),
+    ("Fennada-filmin komediaklassikot", "30-2443"),
+];
+
+pub const SEKALAISET: &[(&str, &str)] = &[
+    ("Sarjat, jotka täytyy nähdä", "30-2407"),
+    ("Sarjamaratoonareille", "30-4388"),
+    ("Hyvän mielen sarjoja", "30-2874"),
+    ("Nopeasti katsottavat sarjat", "30-4808"),
+];
+
+pub const DOKUMENTIT: &[(&str, &str)] = &[
+    ("Arkistodokumentit", "30-5251"),
+    ("Dokumentteja ihmissuhteista", "30-5254"),
+    ("Omannäköistä elämää", "30-5265"),
+    ("Dokumentteja uskonnoista ja henkisyydestä", "30-5247"),
+    ("Dokumentteja politiikasta ja yhteiskunnasta", "30-5259"),
+    ("Dokumentteja kuninkaallisista", "30-5263"),
+    ("Musiikkidokumentteja", "30-5256"),
+    ("Dokumentteja taiteesta ja kulttuurista", "30-5257"),
+    ("Rankkoja dokumentteja", "30-5253"),
+    ("Dokumentteja terveydestä ja hyvinvoinnista", "30-5248"),
+    ("Dokumentteja rahasta ja bisneksestä", "30-5258"),
+    ("Dokumenttisarjoja ammattilaisista", "30-5212"),
+    ("Dokumentteja matkoista ja seikkailuista", "30-5261"),
+    ("MOT", "57-4Nj71REaB"),
+    ("Klassikkodokkarit", "30-2925"),
+    ("Lyhyet dokumenttielokuvat", "30-2990"),
+    ("Urheiludokumentit", "30-1701"),
+    ("Sateenkaarevia dokkareita", "30-4115"),
+    ("Tositarinoita Suomesta", "30-4365"),
+    ("Kotimaiset dokumenttielokuvat", "30-2444"),
+    ("Nuorten dokkarit", "30-4113"),
+    ("Kovat dokkarit", "30-1017"),
+    ("Dokumentteja sodista ja konflikteista", "30-5262"),
+    ("Perjantai: Perjantai pistää miettimään", "30-4484"),
+    ("Perjantai: Uusimmat Perjantai-dokkarit", "30-4485"),
+    ("Perjantai: Omaperäisimmät päähenkilöt ", "30-4478"),
+    ("Perjantai: Liian lähellä", "30-4481"),
+    ("Perjantai: Nenäliinat must!", "30-4479"),
+    ("Perjantai:  Se on ammatinvalintakysymys", "30-4482"),
+    ("Perjantai: Traumapäiväkirjat", "30-4483"),
+    ("Perjantai: Nuorten silmin", "30-4480"),
+    ("Tiedettä ilman otsaryppyjä", "30-2473"),
+    ("Tiede: Avaruus", "30-2478"),
+    ("Tiede: luonto ja ympäristö", "30-2472"),
+    ("Tiedesarjat", "30-2480"),
+    ("Tiededokumentit ", "30-2471"),
+    ("Tiede: Terveys ja hyvinvointi", "30-2474"),
+    ("Ulkolinja: Venäjä, Ukraina & Valko-Venäjä", "30-2135"),
+    ("Ulkolinja: Aasia", "30-2109"),
+    ("Ulkolinja: Afrikka", "30-2110"),
+    ("Ulkolinja: Espanja", "30-2130"),  
+    ("Ulkolinja: Iso-Britannia ja Irlanti", "30-2131"),
+    ("Ulkolinja: Latinalainen Amerikka", "30-2111"),
+    ("Ulkolinja: Lähi-itä", "30-2132"),
+    ("Ulkolinja: Muu Eurooppa", "30-2114"),
+    ("Ulkolinja: Yhdysvallat", "30-2134"),
+    ("Ulkolinja: erikoisartikkelit", "30-2121"),
+];
+
+pub const LUONTO: &[(&str, &str)] = &[
+    ("Avara luonto", "30-1553"),
+    ("Eränkävijöiden kintereillä", "30-1599"),
+    ("Kotimaiset luontodokumentit", "30-1594"),
+    ("Ulkomaiset luontodokumentit", "30-4431"),
+    ("Ilmastonmuutos ja maapallon tila", "30-1517"),
+    ("Koti keskellä luontoa", "30-4401"),
+    ("Eläinten ystäville", "30-2262"),
+    ("Linnut", "30-1596"),
+    ("Mennään metsään", "30-995"),
+];
+
+pub const HISTORIA: &[(&str, &str)] = &[
+    ("Kotimaiset historiadokumentit", "30-2390"),
+    ("Historia: Ulkomaiset dokumentit", "30-2449"),
+    ("Toinen maailmansota ja natsi-Saksa", "30-4627"),
+    ("Suomi sodassa", "30-4632"),
+    ("Kivikaudelta keskiajalle", "30-4628"),
+    ("Historian merkittäviä henkilöitä", "30-4626"),
+    ("Historiallisia tapahtumia", "30-4611"),
+    ("Historia: Kulttuuri ja kulttuurihistoria", "30-2394"),
+    ("Naisia, jotka tekivät historiaa", "30-2851"),
+    ("Historiaa kevyesti", "30-4641"),
+    ("Valtiojohtajia ja kuninkaallisia", "30-2389"),
+    ("Rikosten Suomi", "30-377"),
+];

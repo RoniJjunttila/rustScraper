@@ -1,0 +1,14 @@
+[package]
+name = "yle"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+scraper = "0.18"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+url = "2"
+rusqlite = "0.31"
