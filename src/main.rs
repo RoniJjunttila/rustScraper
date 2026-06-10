@@ -37,12 +37,20 @@ struct ApiRaw {
     raw: Option<String>
 }
 
-#[derive(Debug, Deserialize)]
+/* #[derive(Debug, Deserialize)]
 struct ApiPointer {
     #[serde(rename = "Class")]
     class: String,
 }
+ */
 
+#[derive(Debug, Deserialize)]
+struct ApiPointer {
+    #[serde(rename = "type")]
+    r#type: String,
+    _uri: String,
+}
+ 
 #[derive(Debug, Deserialize)]
 struct ApiImage {
     id: String
@@ -91,6 +99,7 @@ async fn make_request(client: &Client, url: Url) -> Result<ApiResponse, reqwest:
         .await
 }
 
+/* ELI EI KOSKAAN LOGITA DATAA  */
 async fn fetch_category(url: Url, id: String, client: &Client) {
 
     let response = match make_request(client, url).await {
@@ -98,17 +107,25 @@ async fn fetch_category(url: Url, id: String, client: &Client) {
 
         Err(_) => {
             /* new fetch */
-            let new_url = match get_token(id).await {
-                Ok(token) => Url::parse(&token).unwrap(),
+            let new_token = match get_token(id.to_string()).await {
+                Ok(token) => token,
                 Err(e) => {
-                    println!("{:?}", e);
+                    println!("{:?}", e); 
                     return;
                 }
             };
 
+            let token_ref: &str = &new_token;
+            let new_url = make_url(token_ref).await;
+    
+         //   println!("new url is {:?} ", new_url);
+
             match make_request(client, new_url).await {
                 Ok(data) => data,
-                Err(_e) => { return }
+                Err(e) => { 
+                    println!(" error occured {:?} ", e); /* tulee aina tänne */
+                    return 
+                }
             }
         }
     };
@@ -119,7 +136,7 @@ async fn fetch_category(url: Url, id: String, client: &Client) {
 
     for item in &response.data {
         if let Some(raw) = &item.labels[0].raw { 
-            let typ = &item.pointer.class; 
+            let typ = &item.pointer.r#type; 
 
             let new_item = OutputData {
                 title: String::from(item.title.clone()),
